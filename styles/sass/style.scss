@@ -1,8 +1,5 @@
-// inside style.scss
-@import 'setup';
-@import 'header';
-@import 'footer';
-@import 'main';
+
+
 
 
 .wrapper {
@@ -12,8 +9,16 @@
 }
 
 
-h1 {
-    color: yellow;
-    background-color: black;
-    font-size: 53px;
+img {
+    width: 100%;
 }
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+@import 'setup';
+@import 'header';
+@import 'footer';
+@import 'main';

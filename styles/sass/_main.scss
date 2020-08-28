@@ -1,0 +1,82 @@
+h1, p, a {
+    color: white;
+}
+
+.contact-mid {
+    background-color: #111010;
+    .contact-body {
+        display: flex;
+        justify-content: space-around;
+        padding: 100px 0 150px 0;
+        .contact-link {
+            flex-grow: 1;
+            ul {
+                display: flex;
+                li {
+                    margin: 0 20px 20px 0;
+                    a {
+                        font-size: 25px;
+                    }
+                }
+            }
+            .contact-address {
+                width: 250px;
+            }
+            .contact-address p {
+                font-family: 'Chathura', sans-serif;
+                font-size: 39px;
+                line-height: 30px;
+            }
+            .contact-address p:nth-of-type(1) {
+                margin-bottom: 25px;
+            }
+        }
+        .form-container {
+            position: relative;
+            flex-grow: 8;
+            .contact-form {
+                position: absolute;
+                top: -220px;
+                background-color: #220303;
+                height: 500px;
+                box-shadow: 20px 15px #FF8327;
+                text-align: center;
+                textarea {
+                    width: 90%;
+                    border: 1px solid white;
+                    color: white;
+                    background-color: #220303;
+                    font-family: 'Chathura', sans-serif;
+                    font-size: 29px;
+                    line-height: 25px;
+                    resize: none;
+                    padding: 30px 0 0 20px;
+                }
+                input[type=email],
+                input[type=text] {
+                    background-color: #220303;
+                    width: calc(45% - 13px);
+                    color: white;
+                    border: none;
+                    border-bottom: 1px solid white;
+                    margin: 30px 10px 35px 10px;
+                    padding: 0 0 10px 20px;
+                    font-family: 'Chathura', sans-serif;
+                    font-size: 29px;
+                }
+                input[type=submit] {
+                    margin-top: 40px;
+                    width: 90%;
+                    background-color: #BF2603;
+                    border: none;
+                    color: white;
+                    font-family: 'Chathura', sans-serif;
+                    font-size: 49px;
+                    line-height: 35px;
+                    font-weight: 700;
+                }
+            }  
+        }
+    }
+}
+
