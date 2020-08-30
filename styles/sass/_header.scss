@@ -12,7 +12,10 @@
 .blog {
     background-image: url(../assets/blog-header-1.jpg);
     height: 600px;
-
+    h1 {
+        font-size: 108px;
+        font-weight: 700;
+    }
 }
 
 header {
