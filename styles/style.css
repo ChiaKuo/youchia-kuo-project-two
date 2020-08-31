@@ -240,6 +240,73 @@ img {
   width: 100%;
 }
 
+.visually-hidden {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
+  /* added line */
+}
+
+header {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+header h1 {
+  font-family: 'Chathura', sans-serif;
+  font-size: 83.2px;
+  line-height: 94.7px;
+  letter-spacing: 2.6px;
+}
+
+header nav {
+  margin-bottom: 180px;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header nav ul li {
+  margin: 40px;
+}
+
+header nav ul li a {
+  font-family: 'Chathura', sans-serif;
+  font-size: 38px;
+  font-weight: bold;
+  line-height: 29px;
+  letter-spacing: 1.9px;
+  text-decoration: none;
+}
+
+header nav ul li a:hover {
+  border-bottom: 1px solid red;
+}
+
+header nav ul li a:focus {
+  border: 1px solid yellow;
+}
+
+header nav ul li .bar-link {
+  font-family: 'Tulpen One', cursive;
+  font-size: 64px;
+  font-weight: 300;
+  position: relative;
+  bottom: 5px;
+}
+
 .home {
   background-image: url(../assets/home-image-1.jpg);
   height: 700px;
@@ -309,53 +376,6 @@ img {
   color: #FF8327;
 }
 
-header {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-header h1 {
-  font-family: 'Chathura', sans-serif;
-  font-size: 83.2px;
-  line-height: 94.7px;
-  letter-spacing: 2.6px;
-}
-
-header nav {
-  margin-bottom: 180px;
-}
-
-header nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-header nav ul li {
-  margin: 40px;
-}
-
-header nav ul li a {
-  font-family: 'Chathura', sans-serif;
-  font-size: 38px;
-  font-weight: bold;
-  line-height: 29px;
-  letter-spacing: 1.9px;
-  text-decoration: none;
-}
-
-header nav ul li .bar-link {
-  font-family: 'Tulpen One', cursive;
-  font-size: 64px;
-  font-weight: 300;
-  position: relative;
-  bottom: 5px;
-}
-
 h1, p, a {
   color: white;
 }
@@ -391,6 +411,10 @@ h1, p, a {
 
 .contact-mid .contact-body .contact-link ul li a {
   font-size: 25px;
+}
+
+.contact-mid .contact-body .contact-link ul li a:focus {
+  border: 1px solid yellow;
 }
 
 .contact-mid .contact-body .contact-link .contact-address {
@@ -461,6 +485,14 @@ h1, p, a {
   font-weight: 700;
 }
 
+.contact-mid .contact-body .form-container .contact-form input:focus {
+  border: 1px solid yellow;
+}
+
+.contact-mid .contact-body .form-container .contact-form input[type=submit]:hover {
+  border: 1px solid white;
+}
+
 .blog-mid {
   background-color: #111010;
 }
@@ -489,7 +521,6 @@ h1, p, a {
   line-height: 58px;
   font-weight: 700;
   letter-spacing: 2.2px;
-  color: white;
 }
 
 .blog-mid .blog-left p {
@@ -558,7 +589,6 @@ h1, p, a {
   font-weight: 700;
   letter-spacing: 2.2px;
   margin: 40px 120px 0 120px;
-  color: white;
 }
 
 .blog-mid .blog-right p {
@@ -618,7 +648,6 @@ h1, p, a {
   line-height: 58px;
   font-weight: 700;
   letter-spacing: 2.2px;
-  color: white;
   margin-bottom: 50px;
   margin-right: 120px;
 }
@@ -697,6 +726,10 @@ h1, p, a {
   font-weight: 300;
   margin-right: 5%;
   margin-bottom: 5%;
+}
+
+.blog-mid-bottom .blog-form input:focus {
+  border: 1px solid yellow;
 }
 
 .home-body h2, .home-body p {
@@ -921,7 +954,23 @@ footer p, footer a {
   font-weight: 700;
 }
 
+footer a:focus {
+  border: 1px solid yellow;
+}
+
 @media (max-width: 1080px) {
+  header nav {
+    margin-bottom: 40px;
+  }
+  header nav ul li {
+    margin: 30px;
+  }
+  header nav ul li a {
+    font-size: 28px;
+  }
+  header nav ul li .bar-link {
+    font-size: 54px;
+  }
   .home {
     height: 600px;
   }
@@ -935,18 +984,6 @@ footer p, footer a {
   .home h2 {
     font-size: 70px;
     margin-right: 105px;
-  }
-  header nav {
-    margin-bottom: 40px;
-  }
-  header nav ul li {
-    margin: 30px;
-  }
-  header nav ul li a {
-    font-size: 28px;
-  }
-  header nav ul li .bar-link {
-    font-size: 54px;
   }
   .one .body-flex {
     -webkit-box-orient: vertical;
@@ -1028,6 +1065,7 @@ footer p, footer a {
   }
   .blog h1 {
     font-size: 88px;
+    width: 200px;
   }
   .blog-mid .blog-flex-container {
     -webkit-box-orient: vertical;
@@ -1040,10 +1078,7 @@ footer p, footer a {
   }
   .blog-mid .blog-left {
     width: 80%;
-    margin-right: 0;
-    margin-top: 5%;
-    position: relative;
-    z-index: 10000;
+    margin: 5% 0;
     background-color: #220303;
     border: 20px solid #220303;
   }
@@ -1086,9 +1121,6 @@ footer p, footer a {
     content: none;
   }
   .blog-mid-bottom .blog-comment {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -1098,9 +1130,6 @@ footer p, footer a {
     margin: 0 0 30px 0;
   }
   .blog-mid-bottom .blog-comment-one, .blog-mid-bottom .blog-comment-two {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -1127,28 +1156,12 @@ footer p, footer a {
     margin: 3% 1.5% 3% 1.5%;
     padding: 0;
   }
+  .contact h1 {
+    margin-top: 205px;
+  }
 }
 
 @media (max-width: 768px) {
-  .home {
-    height: 500px;
-  }
-  .home h1, .home h2 {
-    text-align: left;
-  }
-  .home h1 {
-    margin-top: -350px;
-    margin-left: -10px;
-    font-size: 150px;
-  }
-  .home h2 {
-    font-size: 50px;
-    margin-left: -5px;
-    margin-top: 0px;
-  }
-  .home img {
-    width: 70%;
-  }
   header nav {
     margin-bottom: 30px;
   }
@@ -1167,6 +1180,25 @@ footer p, footer a {
   }
   header nav ul li .bar-link {
     font-size: 44px;
+  }
+  .home {
+    height: 500px;
+  }
+  .home h1, .home h2 {
+    text-align: left;
+  }
+  .home h1 {
+    margin-top: -350px;
+    margin-left: -10px;
+    font-size: 150px;
+  }
+  .home h2 {
+    font-size: 50px;
+    margin-left: -5px;
+    margin-top: 0px;
+  }
+  .home img {
+    width: 70%;
   }
   .four div {
     height: 300px;
@@ -1231,10 +1263,94 @@ footer p, footer a {
   .blog-mid-bottom .blog-comment-one .blog-comment-text p:nth-of-type(1), .blog-mid-bottom .blog-comment-two .blog-comment-text p:nth-of-type(1) {
     font-size: 40px;
   }
+  .blog-mid-bottom .blog-form input[type=email],
+  .blog-mid-bottom .blog-form input[type=text] {
+    width: 93%;
+  }
+  .contact {
+    height: 450px;
+  }
+  .contact h1 {
+    margin-top: -300px;
+    font-size: 80px;
+  }
+  .contact-mid .contact-body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    padding: 50px 0 50px 0;
+  }
+  .contact-mid .contact-body .contact-link {
+    text-align: center;
+    width: 100%;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .contact-mid .contact-body .contact-link ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contact-mid .contact-body .contact-link ul li {
+    margin: 0 40px 40px 40px;
+  }
+  .contact-mid .contact-body .contact-link ul li a {
+    font-size: 45px;
+  }
+  .contact-mid .contact-body .contact-link .contact-address {
+    width: 100%;
+  }
+  .contact-mid .contact-body .contact-link .contact-address p {
+    font-family: 'Chathura', sans-serif;
+    font-size: 39px;
+    line-height: 30px;
+  }
+  .contact-mid .contact-body .contact-link .contact-address p:nth-of-type(1) {
+    margin-bottom: 25px;
+  }
+  .contact-mid .contact-body .form-container {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .contact-mid .contact-body .form-container .contact-form {
+    position: relative;
+    top: 0px;
+    background-color: #220303;
+    height: 550px;
+    -webkit-box-shadow: 20px 15px #FF8327;
+            box-shadow: 20px 15px #FF8327;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 50px;
+  }
+  .contact-mid .contact-body .form-container .contact-form input[type=email],
+  .contact-mid .contact-body .form-container .contact-form input[type=text] {
+    width: 90%;
+    margin-top: 0;
+    margin-bottom: 5%;
+  }
 }
 
 @media (max-width: 480px) {
   .home img {
     width: 80%;
   }
+}
+
+button:hover {
+  border: 1px solid white;
+}
+
+button:focus {
+  border: 1px solid yellow;
 }

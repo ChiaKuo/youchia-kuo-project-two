@@ -1,19 +1,6 @@
 @media (max-width: 1080px) {
-    // Home Page Media Queries
-    .home {
-        height: 600px;
-        img {
-            width: 60%;
-        }
-        h1 {
-            margin-top: 150px;
-            font-size: 200px;
-        }
-        h2 {
-            font-size: 70px;
-            margin-right: 105px;
-        }
-    }
+
+    // Header Media Queries
     header {
         nav {
             margin-bottom: 40px;
@@ -28,6 +15,22 @@
                     }
                 }
             }
+        }
+    }
+
+    // Home Page Media Queries
+    .home {
+        height: 600px;
+        img {
+            width: 60%;
+        }
+        h1 {
+            margin-top: 150px;
+            font-size: 200px;
+        }
+        h2 {
+            font-size: 70px;
+            margin-right: 105px;
         }
     }
     .one {
@@ -97,15 +100,13 @@
     }
 
     // Blog Media Queries
-
     .blog {
         height: 500px;
         h1 {
             font-size: 88px;
+            width: 200px;
         }
     }
-
-
     .blog-mid {
         .blog-flex-container {
             flex-direction: column;
@@ -113,10 +114,7 @@
             }
         .blog-left {
             width: 80%;
-            margin-right: 0;
-            margin-top: 5%;
-            position: relative;
-            z-index: 10000;
+            margin: 5% 0;
             background-color: #220303;
             border: 20px solid #220303;
             p, h2 {
@@ -131,7 +129,6 @@
         .blog-left::before {
             display: none;
         }
-
         .blog-right {
             text-align: center;
             width: 100%;
@@ -161,11 +158,8 @@
             content: none;
         }
     }
-
-
     .blog-mid-bottom {
         .blog-comment {
-            display: flex;
             justify-content: center;
         }
         h2 {
@@ -173,7 +167,6 @@
             margin: 0 0 30px 0;
         }
         .blog-comment-one, .blog-comment-two {
-            display: flex;
             justify-content: center;
             .blog-comment-image {
                 margin: 20px;
@@ -200,11 +193,36 @@
         }
     }
 
-
     // Contact Media Queries
+    .contact {
+        h1 {
+            margin-top: 205px;
+        }
+    }
 }
 
 @media (max-width: 768px) {
+
+    // Header Media Queries
+    header {
+        nav {
+            margin-bottom: 30px;
+            ul {
+                flex-direction: column;
+                text-align: right;
+                li {
+                    margin-right: 20px;
+                    a {
+                        font-size: 28px;
+                    }
+                    .bar-link {
+                        font-size: 44px;
+                    }
+                }
+            }
+        }
+    }  
+
     // Home Media Queries
     .home {
         height: 500px;
@@ -224,25 +242,7 @@
         img {
             width: 70%;
         }
-    }
-    header {
-        nav {
-            margin-bottom: 30px;
-            ul {
-                flex-direction: column;
-                text-align: right;
-                li {
-                    margin-right: 20px;
-                    a {
-                        font-size: 28px;
-                    }
-                    .bar-link {
-                        font-size: 44px;
-                    }
-                }
-            }
-        }
-    }   
+    } 
     .four {
         div {
             height: 300px;
@@ -291,7 +291,6 @@
             top: -300px;
         }
     }
-
     .blog-mid-bottom {
         .blog-comment-one, .blog-comment-two {
             .blog-comment-text {
@@ -304,25 +303,84 @@
                 }
             }
         }
+        .blog-form {
+            input[type=email],
+            input[type=text] {
+                width: 93%;
+            }
+        }
     }
+
     // Contact Media Queries
-
-
-    
+    .contact {
+        height: 450px;
+        h1 {
+            margin-top: -300px;
+            font-size: 80px;
+        }
+    }
+    .contact-mid {
+        .contact-body {
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            padding: 50px 0 50px 0;
+            .contact-link {
+                text-align: center;
+                width: 100%;
+                order: 2;
+                ul {
+                    display: flex;
+                    justify-content: center;
+                    li {
+                        margin: 0 40px 40px 40px;
+                        a {
+                            font-size: 45px;
+                        }
+                    }
+                }
+                .contact-address {
+                    width: 100%;
+                }
+                .contact-address p {
+                    font-family: 'Chathura', sans-serif;
+                    font-size: 39px;
+                    line-height: 30px;
+                }
+                .contact-address p:nth-of-type(1) {
+                    margin-bottom: 25px;
+                }
+            }
+            .form-container {
+                order: 1;
+                .contact-form {
+                    position: relative;
+                    top: 0px;
+                    background-color: #220303;
+                    height: 550px;
+                    box-shadow: 20px 15px #FF8327;
+                    text-align: center;
+                    margin-top: 0;
+                    margin-bottom: 50px;
+                    input[type=email],
+                    input[type=text] {
+                        width: 90%;
+                        margin-top: 0;
+                        margin-bottom: 5%;
+                    }
+                }  
+            }
+        }
+    }
 }
 
 
 @media (max-width: 480px) {
+
     // Home Media Queries
     .home {
         img {
             width: 80%;
         }
     }
-
-    // Blog Media Queries
-
-
-
-    // Contact Media Queries
 }

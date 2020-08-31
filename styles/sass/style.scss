@@ -1,10 +1,10 @@
-
-
 @import 'setup';
 
+// General Styles
 a {
     text-decoration: none;
 }
+
 
 h2, p {
     font-family: 'Chathura', sans-serif;
@@ -21,6 +21,16 @@ img {
     width: 100%;
 }
 
+.visually-hidden { 
+    position: absolute !important;
+    height: 1px; 
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    white-space: nowrap; /* added line */
+  }
+
 @import 'header';
 
 @import 'main';
@@ -28,3 +38,11 @@ img {
 @import 'footer';
 
 @import 'media-queries';
+
+button:hover {
+    border: 1px solid white;
+}
+
+button:focus {
+    border: 1px solid yellow;
+}

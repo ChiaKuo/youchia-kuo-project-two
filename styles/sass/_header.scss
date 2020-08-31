@@ -1,3 +1,49 @@
+// Header Styles
+
+header {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    h1 {
+        font-family: 'Chathura', sans-serif;
+        font-size: 83.2px;
+        line-height: 94.7px;
+        letter-spacing: 2.6px;
+    }
+    nav {
+        margin-bottom: 180px;
+        ul {
+            display: flex;
+            justify-content: center;
+            li {
+                margin: 40px;
+                a {
+                    font-family: 'Chathura', sans-serif;
+                    font-size: 38px;
+                    font-weight: bold;
+                    line-height: 29px;
+                    letter-spacing: 1.9px;
+                    text-decoration: none;
+                }
+                a:hover {
+                    border-bottom: 1px solid red;
+                }
+                a:focus {
+                    border: 1px solid yellow;
+                }
+                .bar-link {
+                    font-family: 'Tulpen One', cursive;
+                    font-size: 64px;
+                    font-weight: 300;
+                    position: relative;
+                    bottom: 5px;
+                }
+            }
+        }
+    }
+}
+
+// Home Page Header
 .home {
     background-image: url(../assets/home-image-1.jpg);
     height: 700px;
@@ -37,6 +83,7 @@
     }
 }
 
+// Contact Page Header
 .contact {
     background-image: url(../assets/contact-header-1.jpg);
     height: 550px;
@@ -46,6 +93,7 @@
     }
 }
 
+// Blog Page Header
 .blog {
     background-image: url(../assets/blog-header-1.jpg);
     height: 600px;
@@ -55,45 +103,11 @@
     }
 }
 
+// Navigation Bar Highlight
 .home-link,
 .contact-link,
 .blog-link {
     color:#FF8327;
 }
 
-header {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    h1 {
-        font-family: 'Chathura', sans-serif;
-        font-size: 83.2px;
-        line-height: 94.7px;
-        letter-spacing: 2.6px;
-    }
-    nav {
-        margin-bottom: 180px;
-        ul {
-            display: flex;
-            justify-content: center;
-            li {
-                margin: 40px;
-                a {
-                    font-family: 'Chathura', sans-serif;
-                    font-size: 38px;
-                    font-weight: bold;
-                    line-height: 29px;
-                    letter-spacing: 1.9px;
-                    text-decoration: none;
-                }
-                .bar-link {
-                    font-family: 'Tulpen One', cursive;
-                    font-size: 64px;
-                    font-weight: 300;
-                    position: relative;
-                    bottom: 5px;
-                }
-            }
-        }
-    }
-}
+
