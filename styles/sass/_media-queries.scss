@@ -1,4 +1,37 @@
 @media (max-width: 1080px) {
+    .home {
+        height: 600px;
+        img {
+            width: 60%;
+        }
+        h1 {
+            margin-top: 150px;
+            font-size: 200px;
+        }
+        h2 {
+            font-size: 70px;
+            margin-right: 105px;
+        }
+    }
+
+    header {
+        nav {
+            margin-bottom: 40px;
+            ul {
+                li {
+                    margin: 30px;
+                    a {
+                        font-size: 28px;
+                    }
+                    .bar-link {
+                        font-size: 54px;
+                    }
+                }
+            }
+        }
+    }
+
+
     .one {
         .body-flex {
             flex-direction: column;
@@ -58,8 +91,6 @@
                 margin: 0;
                 padding: 0;
             }
-             
-            
         }
     }
     .four {
@@ -71,12 +102,50 @@
 
 
 @media (max-width: 768px) {
+    .home {
+        height: 500px;
+        h1, h2 {
+            text-align: left;
+        }
+        h1 {
+            margin-top: -350px;
+            margin-left: -10px;
+            font-size: 150px;
+        }
+        h2 {
+            font-size: 50px;
+            margin-left: -5px;
+            margin-top: 0px;
+        }
+        img {
+            width: 70%;
+        }
+    }
+
+    header {
+        nav {
+            margin-bottom: 30px;
+            ul {
+                flex-direction: column;
+                text-align: right;
+                li {
+                    margin-right: 20px;
+                    a {
+                        font-size: 28px;
+                    }
+                    .bar-link {
+                        font-size: 44px;
+                    }
+                }
+            }
+        }
+    }
+    
     .four {
         div {
             height: 300px;
         }
     }
-
     .five {
         .home-event-flex {
             display: flex;
@@ -116,6 +185,9 @@
 
 
 @media (max-width: 480px) {
-
-
+    .home {
+        img {
+            width: 80%;
+        }
+    }
 }
