@@ -1,13 +1,3 @@
-.wrapper {
-  max-width: 1200px;
-  width: 90%;
-  margin: 0 auto;
-}
-
-img {
-  width: 100%;
-}
-
 a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
   margin: 0;
   padding: 0;
@@ -231,9 +221,61 @@ textarea {
   overflow: hidden;
 }
 
+h2, p {
+  font-family: 'Chathura', sans-serif;
+  color: white;
+}
+
+.wrapper {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+}
+
 .home {
   background-image: url(../assets/home-image-1.jpg);
-  height: 800px;
+  height: 700px;
+  position: relative;
+}
+
+.home img {
+  width: 50%;
+  position: absolute;
+  bottom: -15%;
+  right: 0px;
+  z-index: 1;
+}
+
+.home h1, .home h2 {
+  text-align: center;
+  color: white;
+  z-index: 1000;
+  position: relative;
+}
+
+.home h1 {
+  margin-top: 300px;
+  font-size: 261.4px;
+  letter-spacing: 2.4px;
+  font-family: 'Tulpen One', cursive;
+  color: #FF8327;
+}
+
+.home h2 {
+  font-family: 'Chathura', sans-serif;
+  font-size: 83.2px;
+  line-height: 94.7px;
+  letter-spacing: 2.6px;
+  margin-top: 25px;
+  margin-right: 160px;
+}
+
+.home .home-link {
+  color: #FF8327;
 }
 
 .contact {
@@ -296,20 +338,6 @@ header nav ul li .bar-link {
   font-weight: 300;
   position: relative;
   bottom: 5px;
-}
-
-footer {
-  background: #2c2c2c;
-}
-
-footer p {
-  font-family: 'Chathura', sans-serif;
-  color: white;
-  font-size: 30px;
-  line-height: 50px;
-  letter-spacing: 1.9px;
-  text-align: center;
-  font-weight: 700;
 }
 
 h1, p, a {
@@ -653,4 +681,226 @@ h1, p, a {
   font-weight: 300;
   margin-right: 5%;
   margin-bottom: 5%;
+}
+
+.home-body h2, .home-body p {
+  font-family: 'Chathura', sans-serif;
+}
+
+.home-body h2 {
+  font-size: 59px;
+  font-weight: 700;
+}
+
+.home-body p {
+  font-size: 39px;
+  font-weight: 300;
+  line-height: 30px;
+  letter-spacing: 1.9px;
+  color: white;
+}
+
+.home-body button {
+  margin-bottom: 100px;
+  background-color: #BF2603;
+  padding: 5px;
+  font-family: 'Tulpen One', cursive;
+  font-size: 35px;
+  color: white;
+  border: none;
+  width: 200px;
+  letter-spacing: 2px;
+}
+
+.one, .three, .five {
+  background-color: #111010;
+}
+
+.two, .six {
+  background-color: #220303;
+}
+
+.one .body-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.one .body-flex p {
+  font-size: 35px;
+}
+
+.one .body-flex i {
+  font-size: 23px;
+  position: absolute;
+  left: -63px;
+  color: white;
+  background-color: red;
+  border-radius: 50%;
+  padding: 10px;
+  width: 45px;
+  height: 45px;
+}
+
+.one .body-flex div {
+  width: calc(50% - 6%);
+  margin: 0 3%;
+  position: relative;
+}
+
+.one .body-flex div:nth-of-type(1),
+.one .body-flex div:nth-of-type(2) {
+  margin-top: 15%;
+  margin-bottom: 5%;
+}
+
+.one .body-flex div:nth-of-type(3),
+.one .body-flex div:nth-of-type(4) {
+  margin-bottom: 10%;
+}
+
+.two .body-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.two .body-flex div {
+  width: 45%;
+}
+
+.two .body-flex div p {
+  margin-bottom: 35px;
+}
+
+.two .body-flex div button {
+  width: 150px;
+  margin: 0;
+}
+
+.two .body-flex div:nth-of-type(1) img {
+  -webkit-box-shadow: 20px 25px #FF8327;
+          box-shadow: 20px 25px #FF8327;
+  position: relative;
+  top: -25px;
+}
+
+.two .body-flex div:nth-of-type(2) {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-right: 80px;
+  padding-left: 60px;
+}
+
+.two .body-flex div:nth-of-type(3) {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-align: right;
+  margin-left: 80px;
+  padding-right: 60px;
+}
+
+.two .body-flex div:nth-of-type(4) img {
+  -webkit-box-shadow: -20px 25px #FF8327;
+          box-shadow: -20px 25px #FF8327;
+  bottom: -30px;
+  position: relative;
+}
+
+.three {
+  text-align: center;
+}
+
+.three h2 {
+  color: #FF8327;
+  margin-bottom: 20px;
+  padding-top: 150px;
+}
+
+.three p {
+  margin-bottom: 30px;
+}
+
+.four {
+  background-image: url(../assets/banner-image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.four div {
+  height: 500px;
+}
+
+.five .home-event-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.five .home-event-flex div:nth-of-type(1) {
+  width: 25%;
+  margin: 100px 100px 100px 0;
+}
+
+.five .home-event-flex div:nth-of-type(1) img {
+  -webkit-box-shadow: -15px 15px #FF8327;
+          box-shadow: -15px 15px #FF8327;
+}
+
+.five .home-event-flex div:nth-of-type(2) {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 75%;
+}
+
+.five .home-event-flex div:nth-of-type(2) h2 {
+  color: #FF8327;
+  margin-bottom: 10px;
+}
+
+.five .home-event-flex div:nth-of-type(2) p {
+  margin-bottom: 40px;
+}
+
+.five .home-event-flex div:nth-of-type(2) button {
+  margin: 0;
+}
+
+.six .home-gallery-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.six .home-gallery-flex div {
+  width: 31%;
+  margin: 80px 0;
+}
+
+footer {
+  background: #2c2c2c;
+}
+
+footer p {
+  font-family: 'Chathura', sans-serif;
+  color: white;
+  font-size: 30px;
+  line-height: 50px;
+  letter-spacing: 1.9px;
+  text-align: center;
+  font-weight: 700;
 }
