@@ -31,14 +31,15 @@
         margin-top: 25px;
         margin-right: 160px;
     }
-    .home-link {
-        color:#FF8327;
-    }
 }
 
 .contact {
     background-image: url(../assets/contact-header-1.jpg);
     height: 550px;
+    h1 {
+        font-size: 108px;
+        font-weight: 700;
+    }
 }
 
 .blog {
@@ -48,6 +49,12 @@
         font-size: 108px;
         font-weight: 700;
     }
+}
+
+.home-link,
+.contact-link,
+.blog-link {
+    color:#FF8327;
 }
 
 header {
